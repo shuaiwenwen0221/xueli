@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登陆</title>
+	<style type="text/css">
+		#login{
+			height: 300px;
+		}
+		.high{
+			height: 150px;
+		}
+		.manage{
+			display: inline-block;
+			color: #707070;
+			height: 10px;
+			font-size: 13px;
+			padding-top: 17px;
+			padding-left: 10px;
+			padding-right: 20px;
+		}
+		#text{
+			border: 0;
+			outline: none;
+		}
+		#password{
+			border: 0;
+			outline: none;
+		}
+		.kuang{
+			border: solid 1px;
+			height: 50px;
+			width: 300px;
+			color: #D8D8D8;
+		}
+		#biao{
+			float: left;
+		}
+		#prompt1{
+			height: 40px;
+			color: #D8D8D8;
+			font-size: 13px;
+			line-height: 40px;
+			margin-left: 1px;
+			padding-left: 1px;
+			text-align: left;
+			width: 100px;
+		}
+		#prompt2{
+			height: 40px;
+			color: #D8D8D8;
+			font-size: 13px;
+			line-height: 40px;
+		}
+		.button{
+			height: 52px;
+			width: 302px;
+			color: white;
+			background-color: red;
+			border:0;
+		}
+		.high2{
+			height: 170px;
+		}
+		#ends{
+			color: red;
+			float: left;
+			padding-left: 100px;
+			line-height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div id="login" align="center">
+		<div class="high"></div>
+		<div class="biao">
+			<form>
+				<div class="kuang">
+					<div class="manage">用 &nbsp户 &nbsp名</div>
+					<input id="text" type="text" value="" onfocus="tip1()" onblur="tip2()"/>  
+				</div>
+
+				<div id="prompt1" align="center"></div>
+
+				<div class="kuang">
+					<div class="manage">设置密码</div>
+					<input id="password" type="password" value="" onfocus="tip3()" onblur="tip4()"/>  
+				</div>
+
+				<div id="prompt2" align="center"></div>
+				
+				<div>
+					<input class="button" type="button" name="submit" value="立即注册"  onclick="tip5()">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="high2"></div>
+	<div id="ends"></div>
+	<script type="text/javascript">
+		function tip1(){
+			document.getElementById("prompt1").innerHTML='支持中文数字';
+		}
+		function tip2(){
+			if(document.getElementById("text").value==''){
+				document.getElementById("prompt1").innerHTML='用户名不能为空';
+			}else{
+				document.getElementById("prompt1").innerHTML='';
+			}
+			
+		}
+		function tip3(){
+			document.getElementById("prompt2").innerHTML='建议至少使用两种字符组合';
+		}
+		function tip4(){
+			if(document.getElementById("password").value==''){
+				document.getElementById("prompt2").innerHTML='密码不能为空';
+			}else{
+				document.getElementById("prompt2").innerHTML='';
+			}
+			
+		}
+		function tip5(){
+			if(document.getElementById("text").value!=''&&document.getElementById("password").value!=''){
+				document.getElementById("ends").innerHTML='注册成功!'+'<br/>'+'用户名：'+document.getElementById("text").value+'<br/>'+'密码：'+document.getElementById("password").value;
+				setTimeout("open('index.html')",2000);
+			}
+		}
+	</script>
+</body>
+</html>

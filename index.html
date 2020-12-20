@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>carousel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container clear">
+      <div class="title"><img src="image/logo.gif"></div>
+      <form class="form clear">
+        <input type="text" placeholder ="搜索 商品/品牌/店铺" class="search">
+        <input type="button" class="submit">
+      </form>
+      <div class="denglu"><a href="#" onclick="log()">快速登陆</a></div>
+    </div>
+  </div>
+  <div class="box" id="box">
+    <div class="slider" id="slider">
+    <div class="slide"><img src="image/banner_05.jpg" alt=""></div>
+    <div class="slide"><img src="image/banner_01.jpg" alt=""></div>
+    <div class="slide"><img src="image/banner_02.jpg" alt=""></div>
+    <div class="slide"><img src="image/banner_03.jpg" alt=""></div>
+    <div class="slide"><img src="image/banner_04.jpg" alt=""></div>
+    <div class="slide"><img src="image/banner_05.jpg" alt=""></div>
+    <div class="slide"><img src="image/banner_01.jpg" alt=""></div>
+  </div>
+  <span id="left"><</span>
+  <span id="right">></span>
+  <ul class="nav" id="nav">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  </div>
+  <div class="kuang clear">
+    <div class="container clear">
+      <ul class="nav1">
+        <li><a href="#">精品推荐</a></li>
+        <li><a href="#">年度新势力</a></li>
+        <li><a href="#">入群抢好礼</a></li>
+        <li><a href="#">充值折上折</a></li>
+        <li><a href="#">高端Mini套</a></li>
+        <li><a href="#">寻找发光体</a></li>
+        <li class="last"><a href="#">大牌属于你</a></li>
+      </ul>
+      <div class="four">
+        <a href="#">更多推荐</a>
+      </div>
+    </div>
+  </div>
+  <div class="kuang2 clear">
+    <div class="container clear">
+      <div class="tuijian">
+        <p>年 中 钜 献</p>
+      </div>
+    </div>
+  </div>
+  <div lanmu>
+    <div class="container clear">
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p1.jpg"></a></li>
+          <li class="second">
+            <a href="">
+              <div class="third">3CE官方旗舰店</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+       <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p2.jpg"></a></li>
+          <li class="second">
+           <a href="">
+             <div class="third">YSL美妆</div>
+           </a>
+         </li>
+        </ul>
+       </div>
+       <div class="class">
+         <ul>
+            <li class="first"><a href=""><img src="image/p3.jpg"></a></li>
+            <li class="second"><a href="">
+              <div class="third">百雀羚旗舰店</div>
+            </a></li>
+         </ul>
+        </div>
+        <div class="class">
+          <ul>
+            <li class="first"><a href=""><img src="image/p4.jpg"></a></li>
+            <li class="second"><a href="">
+              <div class="third">香奈儿旗舰店</div>
+            </a></li>
+          </ul>
+        </div>
+        <div class="class">
+          <ul>
+            <li class="first"><a href=""><img src="image/p5.jpg"></a></li>
+            <li class="second"><a href="">
+              <div class="third">芙丽芳丝旗舰店</div>
+            </a></li>
+          </ul>
+        </div>
+        <div class="class-">
+          <ul>
+            <li class="first"><a href=""><img src="image/p6.jpg"></a></li>
+            <li class="second"><a href="">
+              <div class="third">悦诗风吟旗舰店</div>
+            </a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div class="kuang2 clear">
+    <div class="container clear">
+      <div class="tuijian">
+        <p>奢 享 大 牌</p>
+      </div>
+    </div>
+  </div>
+  <div lanmu2>
+    <div class="container clear">
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p7.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">雅诗兰黛旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p8.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">兰蔻旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p9.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">雅萌旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p10.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">海蓝之谜旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p11.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">慕金旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-">
+        <ul>
+          <li class="first"><a href=""><img src="image/p12.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">skii旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container clear">
+      <div class="tuijian">
+        <p>国 货 新 锐</p>
+      </div>
+    </div>
+  </div>
+  <div class="lanmu3 clear">
+    <div class="container clear">
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p13.png"></a></li>
+          <li class="second"><a href="">
+            <div class="third">HFP旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p14.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">薇诺娜旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p15.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">完美日记旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p16.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">珀莱雅旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p17.png"></a></li>
+          <li class="second"><a href="">
+            <div class="third">花西子旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-">
+        <ul>
+          <li class="first"><a href=""><img src="image/p18.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">韩束旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container clear">
+      <div class="tuijian">
+        <p>国 际 大 牌</p>
+      </div>
+    </div> 
+  </div>
+  <div class="lanmu3 clear">
+    <div class="container clear">
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p19.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">欧莱雅旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p20.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">红地球旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p21.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">旁氏官方旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p22.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">美宝莲旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p23.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">欧莱雅彩妆旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-">
+        <ul>
+          <li class="first"><a href=""><img src="image/p24.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">欧莱雅男士旗舰店</div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container clear">
+      <div class="tuijian">
+        <p>买 1 享 10</p>
+      </div>
+    </div>
+  </div>
+  <div class="lanmu3 clear">
+    <div class="container clear">
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p25.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">纳米美容仪</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p26.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">苏菲娜防晒霜</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p27.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">海蓝之谜套装</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p28.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">3CE唇釉</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p29.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">奥杰尼赋活凝露</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-">
+        <ul>
+          <li class="first"><a href=""><img src="image/p30.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">法国古龙香水</div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container clear">
+      <div class="tuijian">
+        <p>独 家 放 送</p>
+      </div>
+    </div>
+  </div>
+  <div class="lanmu3 clear">
+    <div class="container clear">
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p31.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">海蓝之谜面膜</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p32.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">科颜氏洁面乳</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p33.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">手+护发洗护套装</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p34.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">NARS双色眼影</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p35.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">IPSA修护套装</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-">
+        <ul>
+          <li class="first"><a href=""><img src="image/p36.png"></a></li>
+          <li class="second"><a href="">
+            <div class="third">法儿曼面膜</div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container clear">
+      <div class="tuijian">
+        <p>大 牌 出 彩</p>
+      </div>
+    </div>
+  </div>
+  <div class="lanmu3 clear">
+    <div class="container clear">
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p37.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">3CE丝绒唇釉</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p38.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">完美日记眼影盘</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p39.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">YSL丝绒唇釉</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p40.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">MAC尤雾弹</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class">
+        <ul>
+          <li class="first"><a href=""><img src="image/p41.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">花西子蜜粉</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-">
+        <ul>
+          <li class="first"><a href=""><img src="image/p42.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third">雅诗兰黛持妆粉底</div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container clear">
+      <div class="tuijian">
+        <p>在 &nbsp线 &nbsp试 &nbsp妆</p>
+      </div>
+    </div>
+  </div>
+  <div class="lanmu3 clear">
+    <div class="container clear" id="shizhuang" onclick="choice()">
+      <img src="image/TB16_WGHXP7gK0jSZFjXXc5aXXa-750-210.png" class="shizhuang">
+    </div>
+  </div>
+  <div>
+    <div class="container clear">
+      <div class="tuijian">
+        <p>猜 你 喜 欢</p>
+      </div>
+    </div>
+  </div>
+  <div class="lanmu3 clear">
+    <div class="container clear">
+      <div class="class-like">
+        <ul>
+          <li class="first"><a href=""><img src="image/p43.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third-">colorkey</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-like">
+        <ul>
+          <li class="first"><a href=""><img src="image/p44.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third-">黑白补水面膜</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class-like">
+        <ul>
+          <li class="first"><a href=""><img src="image/p45.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third-">资生堂洁面乳</div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="class--like">
+        <ul>
+          <li class="first"><a href=""><img src="image/p46.jpg"></a></li>
+          <li class="second"><a href="">
+            <div class="third-">芙丽芳丝卸妆液</div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="container clear">
+      <div class="bottom-ling">
+        <a href=""><img src="image/bottom.png"></a>
+      </div>
+      <div class="bottom-er">
+        <p>购物指南</p>
+        <div class="lb">
+          <ul>
+            <li><a href="">免费注册</a></li>
+            <li><a href="">开通支付宝</a></li>
+            <li><a href="">充值支付宝</a></li>
+            <li><a href="">实名认证</a></li>
+            <li><a href="">绑定银行卡</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-si">
+        <p>购物保障</p>
+        <div class="hb">
+          <ul>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">发票保障</a></li>
+            <li><a href="">退换规则</a></li>
+            <li><a href="">客户服务</a></li>
+            <li><a href="">缺货赔付</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-si">
+        <p>支付方式</p>
+        <div class="hb">
+          <ul>
+            <li><a href="">余额宝</a></li>
+            <li><a href="">支付宝</a></li>
+            <li><a href="">蚂蚁花呗</a></li>
+            <li><a href="">银行卡</a></li>
+            <li><a href="">货到付款</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-si">
+        <p>商家服务</p>
+        <div class="hb">
+          <ul>
+            <li><a href="">商家入驻</a></li>
+            <li><a href="">物流服务</a></li>
+            <li><a href="">运营服务</a></li>
+            <li><a href="">商家中心</a></li>
+            <li><a href="">帮助</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-">
+    <div class="banquan"><p>©2020 本期优选好物 2019012519所有</p></div>
+  </div>
+  <a href="javascript:;" id="goLink">Go</a>
+  <script>
+    var box = document.getElementById('box');
+    var oNavlist = document.getElementById('nav').children;
+    var slider = document.getElementById('slider');
+    var left = document.getElementById('left');
+    var right = document.getElementById('right');
+    var index = 1;
+    var timer;
+    var isMoving = false;
+    box.onmouseover = function(){
+      animate(left,{opacity:50})
+      animate(right,{opacity:50})
+      clearInterval(timer)
+    }
+    box.onmouseout = function(){
+      animate(left,{opacity:0})
+      animate(right,{opacity:0})
+      timer = setInterval(next, 3000);
+    }
+    right.onclick = next;
+    left.onclick = prev;
+    for( var i=0; i<oNavlist.length; i++ ){
+      oNavlist[i].index = i;
+      oNavlist[i].onclick = function(){
+        index = this.index+1;
+        navmove();
+        animate(slider,{left:-1200*index});
+      }
+    }
+    function next(){
+      if(isMoving){
+        return;
+      }
+      isMoving = true;
+      index++;
+      navmove();
+      animate(slider,{left:-1200*index},function(){
+        if(index==6){
+          slider.style.left = '-1200px';
+          index = 1;
+        }
+        isMoving = false;
+      });
+    }
+    function prev(){
+      if(isMoving){
+        return;
+      }
+      isMoving = true;
+      index--;
+      navmove();
+      animate(slider,{left:-1200*index},function(){
+        if(index==0){
+          slider.style.left = '-6000px';
+          index = 5;
+        }
+        isMoving = false;
+      });
+    }
+    function navmove(){
+      for( var i=0; i<oNavlist.length; i++ ){
+        oNavlist[i].className = "";
+      }
+      if(index >5 ){
+        oNavlist[0].className = "active";
+      }else if(index<=0){
+        oNavlist[4].className = "active";
+      }else {
+        oNavlist[index-1].className = "active";
+      }
+    }
+    timer = setInterval(next, 3000);
+    function getStyle(obj, attr){
+      if(obj.currentStyle){
+        return obj.currentStyle[attr];
+      } else {
+        return getComputedStyle(obj, null)[attr];
+      }
+    }
+    function animate(obj,json,callback){
+      clearInterval(obj.timer);
+      obj.timer = setInterval(function(){
+        var isStop = true;
+        for(var attr in json){
+          var now = 0;
+          if(attr == 'opacity'){
+            now = parseInt(getStyle(obj,attr)*100);
+          }else{
+            now = parseInt(getStyle(obj,attr));
+          }
+          var speed = (json[attr] - now) / 8;
+          speed = speed>0?Math.ceil(speed):Math.floor(speed);
+          var cur = now + speed;
+          if(attr == 'opacity'){
+            obj.style[attr] = cur / 100;
+          }else{
+            obj.style[attr] = cur + 'px';
+          }
+          if(json[attr] !== cur){
+            isStop = false;
+          }
+        }
+        if(isStop){
+          clearInterval(obj.timer);
+          callback&&callback();
+        }
+      }, 30)
+    }
+    function log(){
+      var a = confirm('是否要注册？');
+      if(a == true){
+        open("login.html");
+      }else{
+
+      }
+    }
+    var goLink = document.getElementById("goLink");
+    window.onscroll = computedDisplay;
+    function computedDisplay() {
+      var curTop = document.documentElement.scrollTop || document.body.scrollTop;
+      var curHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      goLink.style.display = curTop > curHeight ? "block" : "none";
+    }
+    goLink.onclick = function () {
+      this.style.display = "none";
+      window.onscroll = null;
+      var duration = 500, interval = 10, target = document.documentElement.scrollTop || document.body.scrollTop;
+      var step = (target / duration) * interval;
+      var timer = window.setInterval(function () {
+        var curTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (curTop === 0) {
+          window.clearInterval(timer);
+          window.onscroll = computedDisplay;
+          return;
+        }
+        curTop -= step;
+        document.documentElement.scrollTop = curTop;
+        document.body.scrollTop = curTop;
+      }, interval)
+    }
+    function choice(){
+      document.getElementById('shizhuang').innerHTML="<img src='image/timg.jpg' class='shizhuang'>"
+    }
+  </script>
+</body>
+</html>
